@@ -1,0 +1,56 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-architecture-constraints]]
+== Architecture Constraints
+
+.Technical constraints
+
+- TODO
+
+[options="header",cols="1,2,3"]
+|===
+|Nr.|Constraint|Background and/or motivation
+| TC1 | _insert_constraint_here_ | _insert_motivation_here_
+| TC2 | _insert_constraint_here_ | _insert_motivation_here_
+| TC3 | _insert_constraint_here_ | _insert_motivation_here_
+| TC4 | _insert_constraint_here_ | _insert_motivation_here_
+| TC5 | _insert_constraint_here_ | _insert_motivation_here_
+|===
+
+.Organizational constraints
+
+- TOFINISH
+
+[options="header",cols="1,2,3"]
+|===
+|Nr.|Constraint|Background and/or motivation
+| OC1 | User data location | All the personal data about users have to be stored in Germany +
+                             or at least in a EU country, for privacy reasons.
+| OC2 | Use of AWS | All the datas have to stored in cloud like AWS.
+| OC3 | _insert_constraint_here_ | _insert_motivation_here_
+| OC4 | _insert_constraint_here_ | _insert_motivation_here_
+| OC5 | _insert_constraint_here_ | _insert_motivation_here_
+|===
+
+ifdef::arc42help[]
+[role="arc42help"]
+****
+.Contents
+Any requirement that constraints software architects in their freedom of design and implementation decisions or decision about the development process. These constraints sometimes go beyond individual systems and are valid for whole organizations and companies.
+
+.Motivation
+Architects should know exactly where they are free in their design decisions and where they must adhere to constraints.
+Constraints must always be dealt with; they may be negotiable, though.
+
+.Form
+Simple tables of constraints with explanations.
+If needed you can subdivide them into
+technical constraints, organizational and political constraints and
+conventions (e.g. programming or versioning guidelines, documentation or naming conventions)
+
+.Further Information
+
+See https://docs.arc42.org/section-2/[Architecture Constraints] in the arc42 documentation.
+
+****
+endif::arc42help[]
