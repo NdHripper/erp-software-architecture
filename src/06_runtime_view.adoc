@@ -5,6 +5,8 @@ ifndef::imagesdir[:imagesdir: ../docs/images]
 
 El flujo de ejecución para registrar un nuevo producto es el siguiente:
 
+image::Secuencia.jpg[]
+
 **Explicación:**
 1. El administrador llena el formulario en la SPA.
 2. La SPA envía una petición a la API.
@@ -13,4 +15,4 @@ El flujo de ejecución para registrar un nuevo producto es el siguiente:
 5. La SPA actualiza la lista y muestra un mensaje de éxito.
 
 
-image::Secuencia.jpg[]
+
