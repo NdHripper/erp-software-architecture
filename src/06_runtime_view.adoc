@@ -1,59 +1,16 @@
-ifndef::imagesdir[:imagesdir: ../images]
+ifndef::imagesdir[:imagesdir: ../docs/images]
+# 6. Vista de Ejecución
 
-[[section-runtime-view]]
-== Runtime View
+## Escenario: Registrar un Nuevo Producto
 
-ifdef::arc42help[]
-[role="arc42help"]
-****
-.Contents
-The runtime view describes concrete behavior and interactions of the system’s building blocks in form of scenarios from the following areas:
+El flujo de ejecución para registrar un nuevo producto es el siguiente:
 
-* important use cases or features: how do building blocks execute them?
-* interactions at critical external interfaces: how do building blocks cooperate with users and neighboring systems?
-* operation and administration: launch, start-up, stop
-* error and exception scenarios
-
-Remark: The main criterion for the choice of possible scenarios (sequences, workflows) is their *architectural relevance*. It is *not* important to describe a large number of scenarios. You should rather document a representative selection.
-
-.Motivation
-You should understand how (instances of) building blocks of your system perform their job and communicate at runtime.
-You will mainly capture scenarios in your documentation to communicate your architecture to stakeholders that are less willing or able to read and understand the static models (building block view, deployment view).
-
-.Form
-There are many notations for describing scenarios, e.g.
-
-* numbered list of steps (in natural language)
-* activity diagrams or flow charts
-* sequence diagrams
-* BPMN or EPCs (event process chains)
-* state machines
-* ...
+**Explicación:**
+1. El administrador llena el formulario en la SPA.
+2. La SPA envía una petición a la API.
+3. La API valida la información y guarda el producto en la base de datos.
+4. La API responde con el producto creado.
+5. La SPA actualiza la lista y muestra un mensaje de éxito.
 
 
-.Further Information
-
-See https://docs.arc42.org/section-6/[Runtime View] in the arc42 documentation.
-
-****
-endif::arc42help[]
-
-User interaction with _project_name_ and error handling is pretty basic and simple.
-
-=== <Runtime Scenario 1 (Login procedure)>
-
-The following is the use case of the login procedure.
-
-image::login.jpg[]
-
-* _<insert runtime diagram or textual description of the scenario>_
-* _<insert description of the notable aspects of the interactions between the
-building block instances depicted in this diagram.>_
-
-- TODO: add other runtime scenarios.
-
-=== <Runtime Scenario 2>
-
-=== ...
-
-=== <Runtime Scenario n>
+image::Secuencia.jpg[]
